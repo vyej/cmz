@@ -38,6 +38,6 @@ exclude: [ 'README.md', 'COPYING' ]
 # Plugins
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-seo-tag
 

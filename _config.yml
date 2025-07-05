@@ -14,13 +14,11 @@ sass:
   sass_dir: _sass
   style: expanded # compact, expanded or compressed
 
-paginate: 5
-
 # Paginate
 pagination:
   enabled: true
   # Value set low for demonstration purposes
-  per_page: 3
+  per_page: 5
   sort_field: 'date'
   sort_reverse: true
 

@@ -1,10 +1,9 @@
 # Site Specific Configuration
-name: C-M-z
-description: Evaluates the current region >- 記住更美好而不是更丑惡的事，這無疑是高貴的，也更正義，更虔敬，更令人愉快。 --色諾芬《遠征記·卷五》
+title: C-M-z | 星辰的漫遊構成了時間
+
 url: https://vyej.github.io/cmz/
+baseurl: "/cmz"
 author: vy
-timezone: Asia/Shanghai
-timezone_short: ET
 
 # Keywords
 keywords: ['music', 'life', 'theoria', 'exoteric']

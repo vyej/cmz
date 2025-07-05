@@ -5,7 +5,7 @@ url: https://vyej.github.io/cmz
 baseurl: '/cmz'
 
 permalink: /:year/:month/:day/:title/
-paginate: 3
+paginate: 5
 
 gems: [jekyll-paginate]
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']

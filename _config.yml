@@ -1,41 +1,19 @@
-# Site Specific Configuration
-title: C-M-z | 星辰的漫遊構成了時間
-description: Moriatur anima meamortem philisophorum.
+# Site settings
+title: "星辰的漫遊構成了時間"
+bye_message: "Bienvenue"
+baseurl: "/cmz/"
+url: "https://vyej.github.io/cmz"
 
-url: https://vyej.github.io/cmz/
-baseurl: "/cmz"
-author: vy
 
-# Keywords
-keywords: ['music', 'life', 'theoria', 'exoteric']
+paginate: 3
 
-# Styling
-sass:
-  sass_dir: _sass
-  style: expanded # compact, expanded or compressed
 
-# Paginate
-pagination:
-  enabled: true
-  # Value set low for demonstration purposes
-  per_page: 5
-  sort_field: 'date'
-  sort_reverse: true
 
-# Category Paginating
-autopages:
-  enabled: false
-  categories:
-    title: 'Posts in category :cat'
-    permalink: '/category/:cat'
-    silent: false
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
 
-# Exclusions
-exclude: [ 'README.md', 'COPYING' ]
 
-# Plugins
+
 plugins:
-  - jekyll-feed
-  - jekyll-paginate-v2
-  - jekyll-seo-tag
-
+  - jekyll-paginate

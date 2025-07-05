@@ -1,7 +1,7 @@
 name: C-M-z 星辰的漫遊構成了時間
 description: Evaluates the current region >----  Moriatur anima meamortem philisophorum.
 
-url: https://vyej.github.io/cmz/
+url: https://vyej.github.io/cmz
 baseurl: '/cmz'
 
 permalink: /:year/:month/:day/:title/

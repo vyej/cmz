@@ -1,27 +1,19 @@
 ---
-layout: page
+layout: default
 ---
+<article class="post">
 
-<div class="post">
+	{% if page.external-url %}
+		<h1>
+			<a href="{{ page.external-url }}">{{ page.title }}</a> 
+			<a class="anchor" href="{{ page.url }}"><i class="icon-anchor"></i></a>
+		</h1>
+	{% else %}
+		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+	{% endif %}
 
-  <header class="post-header">
-    <p class="meta">
-        {{ page.date | date: "%b %-d, %Y" }}
-        {% if page.author %} • {{ page.author }}{% endif %}
-        {% if page.meta %} • {{ page.meta }}{% endif %}
-        •
-        {% for category in page.tags %}<span><a href="{{ site.baseurl }}category/#{{ category }}" class="reserved">{{ category }}</a>{% if forloop.last != true %},{% endif %}</span>{% endfor %}
-    </p>
-  </header>
+	<div class="post-content">{{ content }}</div>
 
-  <article class="post-content">
-  {{ content }}
-  </article>
+	<p class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span></p>
 
-	<p class="feed-recomendation">
-		Gostou do post? Assina o <a href="{{ site.baseurl }}feed/">feed</a> e seja feliz!!
-	</p>
-
-  {% include disqus.html %}
-
-</div>
+</article>

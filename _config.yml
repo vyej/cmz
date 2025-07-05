@@ -1,19 +1,9 @@
-# Site settings
-title: "星辰的漫遊構成了時間"
-bye_message: "Bienvenue"
-baseurl: "/cmz/"
-url: "https://vyej.github.io/cmz"
+name: C-M-z 星辰的漫遊構成了時間
+url: https://vyej.github.io/cmz
+description: Evaluates the current region >----  Moriatur anima meamortem philisophorum.
 
-
+permalink: /:year/:month/:day/:title/
 paginate: 3
 
-
-
-# Build settings
-markdown: kramdown
-permalink: /:categories/:title/
-
-
-
-plugins:
-  - jekyll-paginate
+gems: [jekyll-paginate]
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']

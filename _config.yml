@@ -1,0 +1,41 @@
+# Site Specific Configuration
+name: C-M-z
+description: Evaluates the current region >- 記住更美好而不是更丑惡的事，這無疑是高貴的，也更正義，更虔敬，更令人愉快。 --色諾芬《遠征記·卷五》
+url: https://vyej.github.io/cmz/
+author: vy
+timezone: Asia/Shanghai
+timezone_short: ET
+
+# Keywords
+keywords: ['music', 'life', 'theoria', 'exoteric']
+
+# Styling
+sass:
+  sass_dir: _sass
+  style: expanded # compact, expanded or compressed
+
+# Paginate
+pagination:
+  enabled: true
+  # Value set low for demonstration purposes
+  per_page: 3
+  sort_field: 'date'
+  sort_reverse: true
+
+# Category Paginating
+autopages:
+  enabled: true
+  categories:
+    title: 'Posts in category :cat'
+    permalink: '/category/:cat'
+    silent: false
+
+# Exclusions
+exclude: [ 'README.md', 'COPYING' ]
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+
